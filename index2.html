@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Slideshow</title>
+    <link rel="stylesheet" href="css/styles2.css">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="page-title">Home Show</h1>
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="images/homes/home1.jpg" alt="Home 1">
+        </div>
+        <div class="slide fade">
+            <img src="images/homes/home2.jpg" alt="Home 2">
+        </div>
+        <div class="slide fade">
+            <img src="images/homes/home3.jpg" alt="Home 3">
+        </div>
+        
+        <!-- Navigation buttons -->
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+    </div>
+
+    <!-- Avatar section -->
+    <div class="avatar-container">
+        <img src="images/avatar.png" alt="Tour Guide" class="avatar-image animated">
+        <div class="speech-bubble animated">
+            Welcome to our home tour! Click through to see our beautiful homes.
+        </div>
+    </div>
+    
+    <script src="js/script2.js"></script>
+</body>
+</html>

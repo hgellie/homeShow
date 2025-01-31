@@ -32,13 +32,13 @@ body {
     margin: auto;
 }
 
+/* Update or add these styles */
 .slide {
-    display: none;
+    display: none;  /* This ensures slides are hidden by default */
 }
 
-.slide img {
-    width: 100%;
-    height: auto;
+.slide:first-child {
+    display: block;  /* This shows the first slide */
 }
 
 /* Navigation buttons */

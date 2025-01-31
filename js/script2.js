@@ -3,12 +3,7 @@ let slideIndex = 1;
 // Show slides when page loads and start avatar animation
 document.addEventListener('DOMContentLoaded', function() {
     showSlides(slideIndex);
-    
-    // Simple animation check
-    const avatar = document.querySelector('.avatar-image');
-    if (avatar) {
-        console.log('Avatar found and animation should be working');
-    }
+    animateAvatar();
 });
 
 // Next/previous controls
@@ -42,14 +37,9 @@ function animateAvatar() {
     const avatar = document.querySelector('.avatar-image');
     const speechBubble = document.querySelector('.speech-bubble');
     
-    // Make sure the elements exist before trying to animate them
     if (avatar && speechBubble) {
         // Set welcome message
         speechBubble.textContent = "Welcome to our home tour! Click through to see our beautiful homes.";
-        
-        // Add animations via CSS classes instead of inline styles
-        avatar.classList.add('animated');
-        speechBubble.classList.add('animated');
     }
 }
 

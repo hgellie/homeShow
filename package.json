@@ -1,7 +1,7 @@
 {
   "name": "real-estate-site",
   "version": "0.1.0",
-  "homepage": "https://hgellie.github.io/homeShow/",
+  "homepage": "https://hgellie.github.io/homeShow",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",

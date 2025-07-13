@@ -1,18 +1,22 @@
 import React, { useState } from 'react';
+import home1 from '../images/homes/home1.png';
+import home2 from '../images/homes/home2.png';
+import home3 from '../images/homes/home3.png';
 
 // We define our slide data as an array of objects
+// Each object now holds the image source path and the alt text as strings
 const slides = [
   {
-    image: '/images/homes/home1.png',
-    alt: 'Home 1'
+    src: home1,
+    alt: "Image of a modern home"
   },
   {
-    image: '/images/homes/home2.png',
-    alt: 'Home 2'
+    src: home2,
+    alt: "Image of a suburban home"
   },
   {
-    image: '/images/homes/home3.png',
-    alt: 'Home 3'
+    src: home3,
+    alt: "Image of a countryside home"
   }
 ];
 
@@ -35,9 +39,9 @@ function Slideshow() {
 
   return (
     <div className="slideshow-container">
-      {/* The image source is now dynamic, based on the currentSlide state */}
+      {/* The image source and alt text are now correctly pulled from our slides array */}
       <div className="slide fade">
-        <img src={slides[currentSlide].image} alt={slides[currentSlide].alt} />
+        <img src={slides[currentSlide].src} alt={slides[currentSlide].alt} />
       </div>
 
       {/* Navigation buttons that call our functions */}
